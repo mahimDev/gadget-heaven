@@ -1,0 +1,311 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Galaxy S21 Ultra",
+    "product_image": "https://example.com/images/galaxy_s21_ultra.jpg",
+    "category": "Mobile",
+    "price": 999.99,
+    "description": "High-performance smartphone with advanced camera and 5G.",
+    "Specification": [
+      "6.8-inch display",
+      "108MP camera",
+      "5000mAh battery",
+      "5G support"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://example.com/images/iphone_14_pro.jpg",
+    "category": "Mobile",
+    "price": 1099.99,
+    "description": "The latest iPhone with an A16 Bionic chip and enhanced photography features.",
+    "Specification": [
+      "6.1-inch OLED display",
+      "48MP camera",
+      "3200mAh battery",
+      "5G support"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 3,
+    "product_title": "Google Pixel 7",
+    "product_image": "https://example.com/images/pixel_7.jpg",
+    "category": "Mobile",
+    "price": 799.99,
+    "description": "Pixel's best camera and Google-exclusive software experience.",
+    "Specification": [
+      "6.3-inch OLED display",
+      "50MP camera",
+      "4355mAh battery",
+      "5G support"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": 4,
+    "product_title": "MacBook Pro 14\"",
+    "product_image": "https://example.com/images/macbook_pro_14.jpg",
+    "category": "Laptop",
+    "price": 1999.99,
+    "description": "Powerful laptop with Apple M1 Pro chip, perfect for creative professionals.",
+    "Specification": [
+      "14-inch Retina display",
+      "Apple M1 Pro",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 5,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://example.com/images/dell_xps_13.jpg",
+    "category": "Laptop",
+    "price": 1299.99,
+    "description": "Compact and powerful, with a stunning InfinityEdge display.",
+    "Specification": [
+      "13.4-inch display",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": false,
+    "rating": 4.7
+  },
+  {
+    "product_id": 6,
+    "product_title": "ASUS ROG Zephyrus G14",
+    "product_image": "https://example.com/images/asus_rog_g14.jpg",
+    "category": "Laptop",
+    "price": 1499.99,
+    "description": "Gaming laptop with high-end GPU and fast processor.",
+    "Specification": [
+      "14-inch display",
+      "AMD Ryzen 9",
+      "16GB RAM",
+      "1TB SSD",
+      "RTX 3060"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 7,
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://example.com/images/apple_watch_8.jpg",
+    "category": "Watch",
+    "price": 399.99,
+    "description": "Advanced health features and always-on display.",
+    "Specification": ["45mm display", "Blood Oxygen app", "ECG", "GPS"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 8,
+    "product_title": "Samsung Galaxy Watch5",
+    "product_image": "https://example.com/images/galaxy_watch_5.jpg",
+    "category": "Watch",
+    "price": 279.99,
+    "description": "Durable smartwatch with sleep tracking and fitness monitoring.",
+    "Specification": [
+      "44mm display",
+      "Heart rate monitoring",
+      "GPS",
+      "Water resistant"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": 9,
+    "product_title": "Garmin Forerunner 945",
+    "product_image": "https://example.com/images/garmin_forerunner_945.jpg",
+    "category": "Watch",
+    "price": 499.99,
+    "description": "Premium GPS running and triathlon watch.",
+    "Specification": [
+      "1.2-inch display",
+      "GPS",
+      "Heart rate monitoring",
+      "20-hour battery"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 10,
+    "product_title": "Sony WH-1000XM5",
+    "product_image": "https://example.com/images/sony_wh1000xm5.jpg",
+    "category": "Headphone",
+    "price": 399.99,
+    "description": "Industry-leading noise-canceling headphones with premium sound.",
+    "Specification": [
+      "30-hour battery",
+      "Noise cancellation",
+      "Bluetooth",
+      "Touch controls"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 11,
+    "product_title": "Bose QuietComfort 45",
+    "product_image": "https://example.com/images/bose_qc45.jpg",
+    "category": "Headphone",
+    "price": 329.99,
+    "description": "Comfortable and powerful headphones with noise cancellation.",
+    "Specification": [
+      "24-hour battery",
+      "Noise cancellation",
+      "Bluetooth",
+      "Lightweight"
+    ],
+    "availability": false,
+    "rating": 4.7
+  },
+  {
+    "product_id": 12,
+    "product_title": "AirPods Pro 2",
+    "product_image": "https://example.com/images/airpods_pro_2.jpg",
+    "category": "Headphone",
+    "price": 249.99,
+    "description": "Apple's high-end earbuds with spatial audio and noise cancellation.",
+    "Specification": [
+      "Active noise cancellation",
+      "Transparency mode",
+      "MagSafe charging"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 13,
+    "product_title": "OnePlus 10 Pro",
+    "product_image": "https://example.com/images/oneplus_10_pro.jpg",
+    "category": "Mobile",
+    "price": 899.99,
+    "description": "Fast-charging phone with great display and flagship specs.",
+    "Specification": [
+      "6.7-inch AMOLED display",
+      "48MP camera",
+      "5000mAh battery",
+      "5G support"
+    ],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": 14,
+    "product_title": "MacBook Air M2",
+    "product_image": "https://example.com/images/macbook_air_m2.jpg",
+    "category": "Laptop",
+    "price": 1199.99,
+    "description": "Ultra-light laptop with new M2 chip for everyday productivity.",
+    "Specification": ["13.6-inch display", "Apple M2", "8GB RAM", "256GB SSD"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 15,
+    "product_title": "HP Spectre x360",
+    "product_image": "https://example.com/images/hp_spectre_x360.jpg",
+    "category": "Laptop",
+    "price": 1399.99,
+    "description": "Convertible laptop with impressive design and performance.",
+    "Specification": [
+      "13.5-inch display",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": 16,
+    "product_title": "Fossil Gen 6",
+    "product_image": "https://example.com/images/fossil_gen_6.jpg",
+    "category": "Watch",
+    "price": 299.99,
+    "description": "Stylish smartwatch with fitness tracking and Wear OS.",
+    "Specification": [
+      "44mm display",
+      "GPS",
+      "Heart rate monitoring",
+      "Swimproof"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": 17,
+    "product_title": "Beats Studio Buds",
+    "product_image": "https://example.com/images/beats_studio_buds.jpg",
+    "category": "Headphone",
+    "price": 149.99,
+    "description": "Compact earbuds with balanced sound and ANC.",
+    "Specification": [
+      "Noise cancellation",
+      "IPX4 water resistant",
+      "Bluetooth",
+      "8-hour battery"
+    ],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": 18,
+    "product_title": "Samsung Galaxy Buds2 Pro",
+    "product_image": "https://example.com/images/galaxy_buds_2_pro.jpg",
+    "category": "Headphone",
+    "price": 229.99,
+    "description": "Samsung's premium earbuds with noise-canceling technology.",
+    "Specification": [
+      "Noise cancellation",
+      "IPX7 water resistant",
+      "Bluetooth 5.3"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 19,
+    "product_title": "Fitbit Versa 4",
+    "product_image": "https://example.com/images/fitbit_versa_4.jpg",
+    "category": "Watch",
+    "price": 229.99,
+    "description": "Versatile fitness watch with comprehensive health tracking.",
+    "Specification": [
+      "GPS",
+      "Heart rate monitoring",
+      "Sleep tracking",
+      "Water resistant"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 20,
+    "product_title": "ASUS Zenfone 8",
+    "product_image": "https://example.com/images/zenfone_8.jpg",
+    "category": "Mobile",
+    "price": 649.99,
+    "description": "Compact smartphone with flagship specs and a powerful processor.",
+    "Specification": [
+      "5.9-inch AMOLED display",
+      "64MP camera",
+      "4000mAh battery",
+      "5G support"
+    ],
+    "availability": true,
+    "rating": 4.4
+  }
+]
