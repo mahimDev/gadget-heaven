@@ -2,7 +2,7 @@
   {
     "product_id": 1,
     "product_title": "Galaxy S21 Ultra",
-    "product_image": "https://example.com/images/galaxy_s21_ultra.jpg",
+    "product_image": "https://i.ibb.co.com/nm3fdx3/samsung-galaxy-s21-ultra-g998-5g-256gb-dual-sim-plata-2-300x300.jpg",
     "category": "Mobile",
     "price": 999.99,
     "description": "High-performance smartphone with advanced camera and 5G.",
@@ -18,7 +18,7 @@
   {
     "product_id": 2,
     "product_title": "iPhone 14 Pro",
-    "product_image": "https://example.com/images/iphone_14_pro.jpg",
+    "product_image": "https://i.ibb.co.com/fY80sRp/iphone-14-pro-purple.webp",
     "category": "Mobile",
     "price": 1099.99,
     "description": "The latest iPhone with an A16 Bionic chip and enhanced photography features.",
@@ -34,7 +34,7 @@
   {
     "product_id": 3,
     "product_title": "Google Pixel 7",
-    "product_image": "https://example.com/images/pixel_7.jpg",
+    "product_image": "https://i.ibb.co.com/cwYCs7z/SYA002004501-E.jpg",
     "category": "Mobile",
     "price": 799.99,
     "description": "Pixel's best camera and Google-exclusive software experience.",
@@ -49,8 +49,8 @@
   },
   {
     "product_id": 4,
-    "product_title": "MacBook Pro 14\"",
-    "product_image": "https://example.com/images/macbook_pro_14.jpg",
+    "product_title": "MacBook Pro 14",
+    "product_image": "https://i.ibb.co.com/6R3ZWH8/apple-macbook-pro-14-inch-macbook-pro-14-inch-m2-pro-10-core-silver-2023-excellent-44372895400252-10.webp",
     "category": "Laptop",
     "price": 1999.99,
     "description": "Powerful laptop with Apple M1 Pro chip, perfect for creative professionals.",
@@ -66,7 +66,7 @@
   {
     "product_id": 5,
     "product_title": "Dell XPS 13",
-    "product_image": "https://example.com/images/dell_xps_13.jpg",
+    "product_image": "https://i.ibb.co.com/whNDKyW/dell1.jpg",
     "category": "Laptop",
     "price": 1299.99,
     "description": "Compact and powerful, with a stunning InfinityEdge display.",
@@ -82,7 +82,7 @@
   {
     "product_id": 6,
     "product_title": "ASUS ROG Zephyrus G14",
-    "product_image": "https://example.com/images/asus_rog_g14.jpg",
+    "product_image": "https://i.ibb.co.com/8rVdwfT/asus-zephyrus-g14-lid-lighting-1024x576.jpg",
     "category": "Laptop",
     "price": 1499.99,
     "description": "Gaming laptop with high-end GPU and fast processor.",
@@ -99,7 +99,7 @@
   {
     "product_id": 7,
     "product_title": "Apple Watch Series 8",
-    "product_image": "https://example.com/images/apple_watch_8.jpg",
+    "product_image": "https://i.ibb.co.com/8rVdwfT/asus-zephyrus-g14-lid-lighting-1024x576.jpg",
     "category": "Watch",
     "price": 399.99,
     "description": "Advanced health features and always-on display.",
@@ -110,7 +110,7 @@
   {
     "product_id": 8,
     "product_title": "Samsung Galaxy Watch5",
-    "product_image": "https://example.com/images/galaxy_watch_5.jpg",
+    "product_image": "https://i.ibb.co.com/d7F8fgM/akrales-220811-226124-0157.jpg",
     "category": "Watch",
     "price": 279.99,
     "description": "Durable smartwatch with sleep tracking and fitness monitoring.",
@@ -126,7 +126,7 @@
   {
     "product_id": 9,
     "product_title": "Garmin Forerunner 945",
-    "product_image": "https://example.com/images/garmin_forerunner_945.jpg",
+    "product_image": "https://i.ibb.co.com/qD4ZxmP/Garmin-245-vs-945.jpg",
     "category": "Watch",
     "price": 499.99,
     "description": "Premium GPS running and triathlon watch.",
@@ -142,7 +142,7 @@
   {
     "product_id": 10,
     "product_title": "Sony WH-1000XM5",
-    "product_image": "https://example.com/images/sony_wh1000xm5.jpg",
+    "product_image": "https://i.ibb.co.com/SPhskRn/download.jpg",
     "category": "Headphone",
     "price": 399.99,
     "description": "Industry-leading noise-canceling headphones with premium sound.",
@@ -158,7 +158,7 @@
   {
     "product_id": 11,
     "product_title": "Bose QuietComfort 45",
-    "product_image": "https://example.com/images/bose_qc45.jpg",
+    "product_image": "https://i.ibb.co.com/khC9hMv/60820-posts-article-md.jpg",
     "category": "Headphone",
     "price": 329.99,
     "description": "Comfortable and powerful headphones with noise cancellation.",
@@ -174,7 +174,7 @@
   {
     "product_id": 12,
     "product_title": "AirPods Pro 2",
-    "product_image": "https://example.com/images/airpods_pro_2.jpg",
+    "product_image": "https://i.ibb.co.com/mGcH0tw/airpods-pro-purple.jpg",
     "category": "Headphone",
     "price": 249.99,
     "description": "Apple's high-end earbuds with spatial audio and noise cancellation.",
@@ -189,7 +189,7 @@
   {
     "product_id": 13,
     "product_title": "OnePlus 10 Pro",
-    "product_image": "https://example.com/images/oneplus_10_pro.jpg",
+    "product_image": "https://i.ibb.co.com/h2f05sG/823-CPGF-LOGOONPL1-1024x1024.webp",
     "category": "Mobile",
     "price": 899.99,
     "description": "Fast-charging phone with great display and flagship specs.",
@@ -205,7 +205,7 @@
   {
     "product_id": 14,
     "product_title": "MacBook Air M2",
-    "product_image": "https://example.com/images/macbook_air_m2.jpg",
+    "product_image": "https://i.ibb.co.com/yPgCkf8/Mac-Book-Air-M2-Chip-Purple-Feature.jpg",
     "category": "Laptop",
     "price": 1199.99,
     "description": "Ultra-light laptop with new M2 chip for everyday productivity.",
@@ -216,7 +216,7 @@
   {
     "product_id": 15,
     "product_title": "HP Spectre x360",
-    "product_image": "https://example.com/images/hp_spectre_x360.jpg",
+    "product_image": "https://i.ibb.co.com/tLDvVqh/Sakr-QBp-OY-jz-Pm-Hkc-H0-V4-EGgf-X-8d-LQ9p-L49-Gj9-QV1g.webp",
     "category": "Laptop",
     "price": 1399.99,
     "description": "Convertible laptop with impressive design and performance.",
@@ -232,7 +232,7 @@
   {
     "product_id": 16,
     "product_title": "Fossil Gen 6",
-    "product_image": "https://example.com/images/fossil_gen_6.jpg",
+    "product_image": "https://i.ibb.co.com/Yb8M4fv/Razer-Fossil-KV-980x500-Bleed.webp",
     "category": "Watch",
     "price": 299.99,
     "description": "Stylish smartwatch with fitness tracking and Wear OS.",
@@ -248,7 +248,7 @@
   {
     "product_id": 17,
     "product_title": "Beats Studio Buds",
-    "product_image": "https://example.com/images/beats_studio_buds.jpg",
+    "product_image": "https://i.ibb.co.com/Yb3Br8v/MK2-H3-AV3.jpg",
     "category": "Headphone",
     "price": 149.99,
     "description": "Compact earbuds with balanced sound and ANC.",
@@ -264,7 +264,7 @@
   {
     "product_id": 18,
     "product_title": "Samsung Galaxy Buds2 Pro",
-    "product_image": "https://example.com/images/galaxy_buds_2_pro.jpg",
+    "product_image": "https://i.ibb.co.com/nb0rv82/images.jpg",
     "category": "Headphone",
     "price": 229.99,
     "description": "Samsung's premium earbuds with noise-canceling technology.",
@@ -279,7 +279,7 @@
   {
     "product_id": 19,
     "product_title": "Fitbit Versa 4",
-    "product_image": "https://example.com/images/fitbit_versa_4.jpg",
+    "product_image": "https://i.ibb.co.com/HnQkPb7/strap-it-strap-it-fitbit-versa-4-breathable-strap.webp",
     "category": "Watch",
     "price": 229.99,
     "description": "Versatile fitness watch with comprehensive health tracking.",
@@ -295,7 +295,7 @@
   {
     "product_id": 20,
     "product_title": "ASUS Zenfone 8",
-    "product_image": "https://example.com/images/zenfone_8.jpg",
+    "product_image": "https://i.ibb.co.com/JRfrRQ3/DSC-0064.webp",
     "category": "Mobile",
     "price": 649.99,
     "description": "Compact smartphone with flagship specs and a powerful processor.",
