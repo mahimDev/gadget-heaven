@@ -4,43 +4,59 @@ const CategoriesBtn = () => {
     const btn = <>
         <NavLink
             to="/"
-            className={`${(isActive) =>
-                isActive ? "active bg-slate-600" : "bg-red-200 "
-                }  text-xl font-bold py-2 px-8 border rounded-3xl`}
-        >
-            All Products
-
-        </NavLink>
-        <NavLink
-            to="/ffff"
-            className={`${(isActive) =>
-                isActive ? "active bg-slate-600" : "bg-red-200 "
-                }  text-xl font-bold py-2 px-8 border rounded-3xl`}
-        >
-            All h
-
-        </NavLink>
-        <NavLink
-            to="/"
-            className={({ isActive }) =>
-                isActive ? "active bg-slate-600 text-xl font-bold py-2 px-8 border rounded-3xl" : ""
+            className={({ isActive, isPending }) =>
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
             }
         >
-
             All Products
         </NavLink>
         <NavLink
-            to="/g"
-            className={({ isActive }) =>
-                isActive ? "active bg-slate-600 text-xl font-bold py-2 px-8 border rounded-3xl" : ""
+            to="/laptop"
+            className={({ isActive, isPending }) =>
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
             }
         >
-
-            All Products
+            Laptop
         </NavLink>
+        <NavLink
+            to="/mobile"
+            className={({ isActive, isPending }) =>
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+            }
+        >
+            Mobile
+        </NavLink>
+        <NavLink
+            to="/watch"
+            className={({ isActive, isPending }) =>
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+            }
+        >
+            Watch
+        </NavLink>
+        <NavLink
+            to="/headphone"
+            className={({ isActive, isPending }) =>
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+            }
+        >
+            Headphone
+        </NavLink>
+        <NavLink
+            to="/bluetooth"
+            className={({ isActive, isPending }) =>
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+            }
+        >
+            Bluetooth
+        </NavLink>
+
+
+
     </>
     return (
-        <div className="bg-gray-400 p-5 rounded-md flex flex-col h-fit">
+        <div className="bg-purple-50 p-5 rounded-md flex flex-col gap-4 h-fit">
+
             {btn}
         </div>
     );
