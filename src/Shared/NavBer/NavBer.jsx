@@ -1,9 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { getItemAddToCards, getItemWishlist } from "../../Utils/utils";
 
 const NavBer = () => {
     const items = getItemAddToCards()
     const wishes = getItemWishlist()
+    const { pathname } = useLocation()
+    console.log(pathname)
     const nav = <>
         <NavLink
             to="/"
@@ -33,8 +35,8 @@ const NavBer = () => {
     </>
     return (
         <div>
-            <div className="top-0 sticky z-10 bg-purple-600 backdrop-blur-xl w-11/12 mx-auto ">
-                <div className="flex justify-between  w-11/12 mx-auto items-center py-5 text-white ">
+            <div className={`${pathname == '/' && "bg-purple-600 text-white"} "  backdrop-blur-xl w-11/12 mx-auto "`}>
+                <div className="flex justify-between  w-11/12 mx-auto items-center py-5  ">
                     <div>
                         <button className="font-semibold border border-purple-600 hover:border-white py-1 px-4 rounded text-2xl ">Gadget Heaven </button>
                     </div>
