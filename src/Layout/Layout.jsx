@@ -17,7 +17,7 @@ const Layout = () => {
         setWishlist,
         wishlist
     }
-    console.log(wishlist)
+
     return (
         <div>
             <DataContext.Provider value={allData} >

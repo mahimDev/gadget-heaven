@@ -3,12 +3,12 @@ import Card from "../Card/Card";
 
 const Laptop = () => {
     const data = useLoaderData()
-    const laptop = data.filter(laptop => laptop.category === "Laptop")
-    console.log(laptop)
+    const laptop = data?.filter(laptop => laptop.category === "Laptop")
+
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {
-                laptop.map(item => <Card key={item?.product_id} item={item}></Card>)
+                laptop?.map(item => <Card key={item?.product_id} item={item}></Card>)
             }
         </div>
     );

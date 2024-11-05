@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import { setItemAddToCard, setItemWishlist } from "../../Utils/utils";
 import { useContext } from "react";
 import { DataContext } from "../../Layout/Layout";
@@ -66,14 +66,16 @@ const Details = () => {
                         <div className="mt-5 flex items-center">
 
                             <div>
-                                <button onClick={handleAddToCard}>
-                                    <div className="bg-purple-600 border-2 border-purple-600 py-2 px-8 rounded-3xl font-bold text-xl text-white flex items-center">
-                                        <p
-                                        >Add To Card
-                                        </p>
-                                        <img className="w-6 ml-2" src="https://img.icons8.com/?size=100&id=23175&format=png&color=FFFFFF" alt="" />
-                                    </div>
-                                </button>
+                                <Link>
+                                    <button onClick={handleAddToCard}>
+                                        <div className="bg-purple-600 border-2 border-purple-600 py-2 px-8 rounded-3xl font-bold text-xl text-white flex items-center">
+                                            <p
+                                            >Add To Card
+                                            </p>
+                                            <img className="w-6 ml-2" src="https://img.icons8.com/?size=100&id=23175&format=png&color=FFFFFF" alt="" />
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                             <div>
                                 <button

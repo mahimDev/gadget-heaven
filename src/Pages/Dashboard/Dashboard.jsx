@@ -1,26 +1,27 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Carts from "../../Components/Cart/Carts";
-import { getItemAddToCards, getItemWishlist } from "../../Utils/utils";
 import Wishlist from "../../Components/WishList/Wishlist";
+import { DataContext } from "../../Layout/Layout";
 
 const Dashboard = () => {
     const [isActive, setIsActive] = useState(true)
     const [totalCost, setTotalCost] = useState(0)
-    const [data, setData] = useState([])
-    useEffect(() => {
-        const data = getItemAddToCards()
-        setData(data)
-    }, [])
-    // const data = getItemAddToCards()
-    const wishes = getItemWishlist()
-    useEffect(() => {
-        const cost = [...data].reduce((i, item) => i + item.price, 0)
+    const { addToCard, setAddToCard, wishlist } = useContext(DataContext)
 
+    useEffect(() => {
+        const cost = [...addToCard].reduce((i, item) => i + item.price, 0)
         const toFixed = cost.toFixed(2)
-        // console.log(totalCost)
         setTotalCost(toFixed)
-    }, [data])
+    }, [addToCard])
+    const handleSortedByPrice = () => {
+        const sorted = [...addToCard].sort((a, b) => b.price - a.price)
+        setAddToCard(sorted)
+    }
+    const handlePurchase = () => {
 
+        setAddToCard([])
+    }
+    console.log(wishlist)
     return (
         <div className="w-11/12 mx-auto">
             <div className="text-center ">
@@ -46,27 +47,31 @@ const Dashboard = () => {
 
                             <div className="flex gap-4">
                                 <h1 className="text-3xl font-bold">Total cost: {totalCost}</h1>
-                                <button className="py-2 border-2 border-purple-600 px-10 rounded-3xl text-xl font-bold text-purple-600">Sort by Price</button>
-                                <button className="py-2 border-2 border-purple-600 px-10 rounded-3xl text-xl font-bold bg-purple-600 text-white">Purchase</button>
+                                <button
+                                    onClick={handleSortedByPrice}
+                                    className="py-2 border-2 border-purple-600 px-10 rounded-3xl text-xl font-bold text-purple-600"
+                                >Sort by Price</button>
+                                <button
+                                    onClick={handlePurchase}
+                                    className="py-2 border-2 border-purple-600 px-10 rounded-3xl text-xl font-bold bg-purple-600 text-white"
+                                >Purchase</button>
                             </div>
                         </div>
                         {
-                            data.map(item => <Carts key={item.product_id} item={item}></Carts>)
+                            addToCard?.map((item, i) => <Carts key={i} item={item}></Carts>)
                         }
                     </div>
                     :
                     <div>
                         <div className="flex justify-between mt-10 w-9/12 mx-auto">
-                            <h1 className="text-3xl font-bold">Cart</h1>
-
+                            <h1 className="text-3xl font-bold">Wishlist</h1>
                             <div className="flex gap-4">
-
                                 <button className="py-2 border-2 border-purple-600 px-10 rounded-3xl text-xl font-bold text-purple-600">Sort by Price</button>
 
                             </div>
                         </div>
                         {
-                            wishes.map(item => <Wishlist key={item.product_id} item={item}></Wishlist>)
+                            wishlist?.map((item, i) => <Wishlist key={i} item={item}></Wishlist>)
                         }
                     </div>
                 }
