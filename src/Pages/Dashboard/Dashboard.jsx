@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Carts from "../../Components/Cart/Carts";
 import { getItemAddToCards, getItemWishlist } from "../../Utils/utils";
 import Wishlist from "../../Components/WishList/Wishlist";
@@ -6,11 +6,21 @@ import Wishlist from "../../Components/WishList/Wishlist";
 const Dashboard = () => {
     const [isActive, setIsActive] = useState(true)
     const [totalCost, setTotalCost] = useState(0)
-    const data = getItemAddToCards()
+    const [data, setData] = useState([])
+    useEffect(() => {
+        const data = getItemAddToCards()
+        setData(data)
+    }, [])
+    // const data = getItemAddToCards()
     const wishes = getItemWishlist()
-    const cost = data.reduce((i, item) => item.price + i)
-    console.log(cost)
-    // setTotalCost(cost)
+    useEffect(() => {
+        const cost = [...data].reduce((i, item) => i + item.price, 0)
+
+        const toFixed = cost.toFixed(2)
+        // console.log(totalCost)
+        setTotalCost(toFixed)
+    }, [data])
+
     return (
         <div className="w-11/12 mx-auto">
             <div className="text-center ">
@@ -35,7 +45,7 @@ const Dashboard = () => {
                             <h1 className="text-3xl font-bold">Cart</h1>
 
                             <div className="flex gap-4">
-                                <h1 className="text-3xl font-bold">Total cost: ekhane jhamela ase</h1>
+                                <h1 className="text-3xl font-bold">Total cost: {totalCost}</h1>
                                 <button className="py-2 border-2 border-purple-600 px-10 rounded-3xl text-xl font-bold text-purple-600">Sort by Price</button>
                                 <button className="py-2 border-2 border-purple-600 px-10 rounded-3xl text-xl font-bold bg-purple-600 text-white">Purchase</button>
                             </div>

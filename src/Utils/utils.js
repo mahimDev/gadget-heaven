@@ -1,4 +1,5 @@
 // get item
+
 const getItemAddToCards = () => {
   const cards = localStorage.getItem("cards");
   if (cards) {
@@ -13,7 +14,7 @@ const setItemAddToCard = (item) => {
   const storedCards = getItemAddToCards();
   storedCards.push(item);
   const cards = JSON.stringify(storedCards);
-  const card = localStorage.setItem("cards", cards);
+  localStorage.setItem("cards", cards);
 };
 // delete item
 // wishlist
@@ -32,7 +33,7 @@ const setItemWishlist = (item) => {
   const storedCards = getItemWishlist();
   storedCards.push(item);
   const cards = JSON.stringify(storedCards);
-  const card = localStorage.setItem("wishlist", cards);
+  localStorage.setItem("wishlist", cards);
 };
 // delete item
 

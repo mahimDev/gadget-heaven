@@ -1,11 +1,11 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { getItemAddToCards, getItemWishlist } from "../../Utils/utils";
+import { useContext } from "react";
+import { DataContext } from "../../Layout/Layout";
+
 
 const NavBer = () => {
-    const items = getItemAddToCards()
-    const wishes = getItemWishlist()
+    const { addToCard, wishlist } = useContext(DataContext)
     const { pathname } = useLocation()
-    console.log(pathname)
     const nav = <>
         <NavLink
             to="/"
@@ -50,13 +50,13 @@ const NavBer = () => {
                             <button
                                 className="border-2 border-white p-[11px] rounded-full font-bold text-purple-600 "
                             ><img className="w-5" src="https://img.icons8.com/?size=100&id=23175&format=png&color=FFFFFF" alt="" /></button>
-                            <p className="absolute ">  {items.length}</p>
+                            <p className="absolute ">  {addToCard.length}</p>
                         </div>
                         <div>
                             <button
                                 className="border-2 border-white p-[11px] rounded-full font-bold text-purple-600 "
                             ><img className="w-5" src="https://img.icons8.com/?size=100&id=37975&format=png&color=FFFFFF" alt="" /></button>
-                            <p className="absolute ">  {wishes.length}</p>
+                            <p className="absolute ">  {wishlist.length}</p>
                         </div>
 
                     </div>

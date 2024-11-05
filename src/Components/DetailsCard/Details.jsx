@@ -1,9 +1,19 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { setItemAddToCard, setItemWishlist } from "../../Utils/utils";
+import { useContext } from "react";
+import { DataContext } from "../../Layout/Layout";
 
 const Details = () => {
     const { id } = useParams()
-    const data = useLoaderData()
+    const {
+        data,
+        setAddToCard,
+        addToCard,
+        setWishlist,
+        wishlist
+    } = useContext(DataContext)
+
+    // const data = useLoaderData()
     const item = data.find(item => item.product_id == id)
 
     const {
@@ -17,12 +27,12 @@ const Details = () => {
         product_title,
         rating,
     } = item
-
-
-
-
-
-
+    const handleAddToCard = () => {
+        setAddToCard([...addToCard, item])
+    }
+    const handleWishlist = () => {
+        setWishlist([...wishlist, item])
+    }
 
     return (
         <div className="w-11/12 relative mx-auto mb-[600px]">
@@ -56,10 +66,9 @@ const Details = () => {
                         <div className="mt-5 flex items-center">
 
                             <div>
-                                <button onClick={() => setItemAddToCard(item)}>
+                                <button onClick={handleAddToCard}>
                                     <div className="bg-purple-600 border-2 border-purple-600 py-2 px-8 rounded-3xl font-bold text-xl text-white flex items-center">
                                         <p
-
                                         >Add To Card
                                         </p>
                                         <img className="w-6 ml-2" src="https://img.icons8.com/?size=100&id=23175&format=png&color=FFFFFF" alt="" />
@@ -68,7 +77,7 @@ const Details = () => {
                             </div>
                             <div>
                                 <button
-                                    onClick={() => setItemWishlist(item)}
+                                    onClick={handleWishlist}
                                     className="border-2 border-purple-600 p-[11px] rounded-full font-bold text-purple-600 ml-5"
                                 ><img className="w-6" src="https://img.icons8.com/?size=100&id=37975&format=png&color=7950F2" alt="" /></button>
                             </div>

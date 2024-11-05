@@ -14,13 +14,13 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout></Layout>,
+        loader: () => fetch('../data.json'),
         errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
                 element: <Home></Home>,
-
-                loader: () => fetch('../data.json'),
+                // loader: () => fetch('../data.json'),
                 children: [
                     {
                         path: '/laptop',
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <Details></Details>,
-                loader: () => fetch('../data.json'),
+                // loader: () => fetch('../data.json'),
             },
             {
                 path: '/dashboard',

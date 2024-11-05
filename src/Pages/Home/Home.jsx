@@ -1,10 +1,12 @@
-import { Outlet, useLoaderData, useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Banner from "../../Shared/Banner/Banner";
 import CategoriesBtn from "../../Components/CategoriesBtn/CategoriesBtn";
 import Card from "../../Components/Card/Card";
+import { useContext } from "react";
+import { DataContext } from "../../Layout/Layout";
 
 const Home = () => {
-    const data = useLoaderData()
+    const { data } = useContext(DataContext)
     const { pathname } = useLocation()
     return (
         <div>
