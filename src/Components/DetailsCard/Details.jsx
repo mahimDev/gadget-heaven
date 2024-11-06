@@ -31,7 +31,7 @@ const Details = () => {
     const handleAddToCard = () => {
         Swal.fire({
             title: "Thanks for adding",
-            confirmButtonText: "cancel",
+            confirmButtonText: "Close",
             text: `Add to card ${product_title}`,
             icon: "success"
         });
@@ -40,7 +40,7 @@ const Details = () => {
     const handleWishlist = () => {
         Swal.fire({
             title: "Thanks for Wishing",
-            confirmButtonText: "cancel",
+            confirmButtonText: "Close",
             text: ` ${product_title} is now wish list`,
             icon: "success"
         });

@@ -18,10 +18,10 @@ const Home = () => {
                 <Link to='/'></Link>
             </Helmet>
             <Banner></Banner>
-            <h1 className="mt-[500px] font-bold text-5xl text-center my-10">Explore Cutting-Edge Gadgets</h1>
+            <h1 className="mt-[500px] font-bold text-5xl text-center text-purple-600 my-10">Explore Cutting-Edge Gadgets</h1>
 
 
-            <div className="flex w-11/12 mx-auto gap-5">
+            <div className="flex w-11/12 mx-auto mt-20 gap-5">
                 <CategoriesBtn ></CategoriesBtn>
                 {pathname == '/' ?
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto">
