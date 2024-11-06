@@ -1,6 +1,6 @@
 # [Gadget Heaven](https://resplendent-cactus-426753.netlify.app/)
 
-## [Requirement Document Link](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/file:///C:/abc%20%20course/mileston-8/B10-A8-gadget-heaven/Batch-10_Assignment-08.pdf)
+## [Requirement Document Link](https://drive.google.com/drive/u/0/folders/14YjW5qRqlJN77-wNR-YpqMx6RRnsC_75)
 
 #### 👉 List of React Fundamental concepts used in the project :
 
