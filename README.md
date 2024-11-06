@@ -10,12 +10,12 @@ I used in the project of react 1,some hooks like useState , useEffect ,useContex
 
 #### 👉 5features of your website/project
 
-1.The navbar will be purple if it is on the home page and white if it is on other paths
+1.The navbar will be purple if it is on the home page and white if it is on other paths.
 
-2. Clicking the details button will show the details of the product dynamically
+2.Clicking the details button will show the details of the product dynamically.
 
 3.Go to product details and click on add to card, the product will be added and added to the navbar.
 
-4.Any action will show the modal
+4.Any action will show the modal.
 
-5.If you go to the dashboard and click sort btn, the products will be displayed in descending order
+5.If you go to the dashboard and click sort btn, the products will be displayed in descending order.

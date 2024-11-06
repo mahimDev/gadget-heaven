@@ -30,10 +30,7 @@ const Dashboard = () => {
             confirmButtonText: "Close",
             text: `Thanks for purchasing your products`,
             icon: "success"
-
-        });
-
-        navigate('/')
+        }).then(() => navigate('/'));
         setAddToCard([])
     }
     console.log(wishlist)

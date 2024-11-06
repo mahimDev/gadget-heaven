@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import { Helmet } from "react-helmet";
 
 const Details = () => {
+    const [isActive, setIsActive] = useState(true)
     const { id } = useParams()
 
     const {
@@ -21,11 +22,8 @@ const Details = () => {
 
     const {
         Specification,
-        availability,
-        category,
         description,
         price,
-        product_id,
         product_image,
         product_title,
         rating,
@@ -41,12 +39,13 @@ const Details = () => {
     }
     const handleWishlist = () => {
         Swal.fire({
-            title: "Thanks for adding",
+            title: "Thanks for Wishing",
             confirmButtonText: "cancel",
             text: ` ${product_title} is now wish list`,
             icon: "success"
         });
         setWishlist([...wishlist, item])
+        setIsActive(false)
     }
     const ratingChanged = () => {
 
@@ -108,10 +107,22 @@ const Details = () => {
                                 </Link>
                             </div>
                             <div>
-                                <button
-                                    onClick={handleWishlist}
-                                    className="border-2 border-purple-600 p-[11px] rounded-full font-bold text-purple-600 ml-5"
-                                ><img className="w-6" src="https://img.icons8.com/?size=100&id=37975&format=png&color=7950F2" alt="" /></button>
+                                {isActive ?
+
+                                    <button
+
+                                        onClick={handleWishlist}
+                                        className="border-2 border-purple-600 p-[11px] rounded-full font-bold  ml-5"
+                                    ><img className="w-6" src="https://img.icons8.com/?size=100&id=37975&format=png&color=7950F2" alt=""
+                                        /></button>
+                                    :
+
+                                    <button
+                                        disabled
+                                        className="border-2 border-gray-400 p-[11px] rounded-full font-bold  ml-5"
+                                    ><img className="w-6" src="https://img.icons8.com/?size=100&id=37975&format=png&color=7950F2" alt=""
+                                        /></button>
+                                }
                             </div>
                         </div>
                     </div>

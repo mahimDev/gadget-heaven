@@ -5,7 +5,7 @@ const CategoriesBtn = () => {
         <NavLink
             to="/"
             className={({ isActive, isPending }) =>
-                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2 text-purple-600 border-purple-600  text-xl font-bold py-2 px-8  rounded-3xl`
             }
         >
             All Products
@@ -13,7 +13,7 @@ const CategoriesBtn = () => {
         <NavLink
             to="laptop"
             className={({ isActive, isPending }) =>
-                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2 text-purple-600 border-purple-600  text-xl font-bold py-2 px-8  rounded-3xl`
             }
         >
             Laptop
@@ -21,7 +21,7 @@ const CategoriesBtn = () => {
         <NavLink
             to="mobile"
             className={({ isActive, isPending }) =>
-                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2 text-purple-600 border-purple-600  text-xl font-bold py-2 px-8  rounded-3xl`
             }
         >
             Mobile
@@ -29,7 +29,7 @@ const CategoriesBtn = () => {
         <NavLink
             to="watch"
             className={({ isActive, isPending }) =>
-                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2 text-purple-600 border-purple-600  text-xl font-bold py-2 px-8  rounded-3xl`
             }
         >
             Watch
@@ -37,7 +37,7 @@ const CategoriesBtn = () => {
         <NavLink
             to="headphone"
             className={({ isActive, isPending }) =>
-                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2 text-purple-600 border-purple-600  text-xl font-bold py-2 px-8  rounded-3xl`
             }
         >
             Headphone
@@ -45,7 +45,7 @@ const CategoriesBtn = () => {
         <NavLink
             to="bluetooth"
             className={({ isActive, isPending }) =>
-                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2  text-xl font-bold py-2 px-8  rounded-3xl`
+                `${isPending ? "pending" : isActive ? "active  bg-purple-600 text-white" : ""} border-2 text-purple-600 border-purple-600  text-xl font-bold py-2 px-8  rounded-3xl`
             }
         >
             Bluetooth
