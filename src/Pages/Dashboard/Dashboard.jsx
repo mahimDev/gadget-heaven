@@ -2,23 +2,38 @@ import { useContext, useEffect, useState } from "react";
 import Carts from "../../Components/Cart/Carts";
 import Wishlist from "../../Components/WishList/Wishlist";
 import { DataContext } from "../../Layout/Layout";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+
     const [isActive, setIsActive] = useState(true)
     const [totalCost, setTotalCost] = useState(0)
     const { addToCard, setAddToCard, wishlist } = useContext(DataContext)
-
+    const navigate = useNavigate()
     useEffect(() => {
-        const cost = [...addToCard].reduce((i, item) => i + item.price, 0)
-        const toFixed = cost.toFixed(2)
-        setTotalCost(toFixed)
+        if (addToCard.length > 0) {
+            const cost = [...addToCard].reduce((i, item) => i + item.price, 0)
+            const toFixed = cost.toFixed(2)
+            setTotalCost(toFixed)
+        } else {
+            setTotalCost(0)
+        }
     }, [addToCard])
     const handleSortedByPrice = () => {
         const sorted = [...addToCard].sort((a, b) => b.price - a.price)
         setAddToCard(sorted)
     }
     const handlePurchase = () => {
+        Swal.fire({
+            title: "Payment Successfully",
+            confirmButtonText: "Close",
+            text: `Thanks for purchasing your products`,
+            icon: "success"
 
+        });
+
+        navigate('/')
         setAddToCard([])
     }
     console.log(wishlist)

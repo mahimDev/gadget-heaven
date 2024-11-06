@@ -33,6 +33,14 @@ const NavBer = () => {
         >
             Dashboard
         </NavLink>
+        <NavLink
+            to="/login"
+            className={({ isActive, isPending }) =>
+                `${isPending ? "pending" : isActive ? "active  border-white" : ""} border-b-2 border-purple-600  `
+            }
+        >
+            Login
+        </NavLink>
 
     </>
 

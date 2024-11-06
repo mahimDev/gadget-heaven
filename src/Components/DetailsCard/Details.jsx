@@ -1,10 +1,13 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
-import { setItemAddToCard, setItemWishlist } from "../../Utils/utils";
-import { useContext } from "react";
+import { Link, useParams } from "react-router-dom";
+import ReactStars from "react-rating-stars-component";
+import { useContext, useState } from "react";
 import { DataContext } from "../../Layout/Layout";
+import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const Details = () => {
     const { id } = useParams()
+
     const {
         data,
         setAddToCard,
@@ -28,14 +31,34 @@ const Details = () => {
         rating,
     } = item
     const handleAddToCard = () => {
+        Swal.fire({
+            title: "Thanks for adding",
+            confirmButtonText: "cancel",
+            text: `Add to card ${product_title}`,
+            icon: "success"
+        });
         setAddToCard([...addToCard, item])
     }
     const handleWishlist = () => {
+        Swal.fire({
+            title: "Thanks for adding",
+            confirmButtonText: "cancel",
+            text: ` ${product_title} is now wish list`,
+            icon: "success"
+        });
         setWishlist([...wishlist, item])
     }
+    const ratingChanged = () => {
 
+    }
     return (
+
         <div className="w-11/12 relative mx-auto mb-[600px]">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Details {product_title} | Gadget Heaven</title>
+                <Link to={`/details/${id}`}></Link>
+            </Helmet>
             <div className="text-center  bg-purple-600  text-white pt-10 pb-48 rounded-b-lg">
                 <h1 className="font-bold text-5xl w-2/4 mx-auto mt-4">Product Details</h1>
                 <p className=" w-1/3 mx-auto mt-5">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
@@ -60,7 +83,14 @@ const Details = () => {
 
                         <p className="my-1"><strong className="font-semibold">Rating ⭐</strong></p>
                         <div className="flex gap-3 items-center ">
-                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>
+                                <ReactStars
+                                    count={rating}
+                                    size={25}
+                                    onChange={ratingChanged}
+                                    activeColor="#ffd700"
+                                />
+                            </p>
                             <p className="rounded-3xl border py-1 px-2">{rating}</p>
                         </div>
                         <div className="mt-5 flex items-center">

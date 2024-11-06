@@ -9,12 +9,13 @@ import Headphone from "../Components/Headphone/Headphone";
 import Bluetooth from "../Components/Bluetooth/Bluetooth";
 import ErrorPage from "../Shared/Error/ErrorPage";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import Login from "../Pages/Log/Login";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout></Layout>,
-        loader: () => fetch('../../public/data.json'),
+        loader: () => fetch('../data.json'),
         errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
@@ -57,7 +58,11 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard',
                 element: <Dashboard></Dashboard>
-            }
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
         ]
 
     }
