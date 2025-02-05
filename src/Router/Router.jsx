@@ -10,6 +10,8 @@ import Bluetooth from "../Components/Bluetooth/Bluetooth";
 import ErrorPage from "../Shared/Error/ErrorPage";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import Login from "../Pages/Log/Login";
+import Register from "../Pages/Res/Register";
+import PrivateRoute from "../Private/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -52,16 +54,20 @@ const router = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                element: <Details></Details>,
-                // loader: () => fetch('../data.json'),
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
+
             },
             {
                 path: '/dashboard',
-                element: <Dashboard></Dashboard>
+                element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
             },
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             },
         ]
 

@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 const Home = () => {
     const { data } = useContext(DataContext)
     const { pathname } = useLocation()
-    console.log(pathname)
+
     return (
         <div>
             <Helmet>

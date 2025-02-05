@@ -1,12 +1,22 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { DataContext } from "../../Layout/Layout";
+import { AuthContext } from "../../Auth/AuthProvider";
 
 
 const NavBer = () => {
+    const { signOutUser, user } = useContext(AuthContext)
     const { addToCard, wishlist } = useContext(DataContext)
     const { pathname } = useLocation()
-
+    const handleLogOut = () => {
+        signOutUser()
+            .then((res) => {
+                console.log(res)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }
 
     const nav1 = <>
         <NavLink
@@ -33,14 +43,26 @@ const NavBer = () => {
         >
             Dashboard
         </NavLink>
-        <NavLink
-            to="/login"
-            className={({ isActive, isPending }) =>
-                `${isPending ? "pending" : isActive ? "active  border-white" : ""} border-b-2 border-purple-600  `
-            }
-        >
-            Login
-        </NavLink>
+        {user ?
+            <NavLink
+
+                onClick={handleLogOut}
+                className={({ isActive, isPending }) =>
+                    `${isPending ? "pending" : isActive ? "active  border-white" : ""} border-2 border-purple-600 px-3 `
+                }
+            >
+                LogOut
+            </NavLink>
+            :
+            <NavLink
+                to="/login"
+                className={({ isActive, isPending }) =>
+                    `${isPending ? "pending" : isActive ? "active  border-white" : ""} border-b-2 border-purple-600  `
+                }
+            >
+                Login
+            </NavLink>
+        }
 
     </>
     // const nav2 = <>
@@ -93,6 +115,9 @@ const NavBer = () => {
                                     <ul className="flex gap-4 text-lg font-semibold">
                                         {nav1}
                                     </ul>
+                                    <div className="w-10">
+                                        <img className="rounded-full" src={user?.photoURL} alt="" />
+                                    </div>
                                 </div>
                                 <div className="flex gap-4">
                                     <div className="relative">
@@ -110,6 +135,7 @@ const NavBer = () => {
 
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     :

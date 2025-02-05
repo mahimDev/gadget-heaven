@@ -33,7 +33,7 @@ const Dashboard = () => {
         }).then(() => navigate('/'));
         setAddToCard([])
     }
-    console.log(wishlist)
+
     return (
         <div className="w-11/12 mx-auto">
             <div className="text-center ">
