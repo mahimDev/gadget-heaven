@@ -62,7 +62,7 @@ Gadget Heaven Online Shop is an e-commerce platform that allows users to browse,
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/mahimDev/gadget-heaven?tab=readme-ov-file
+   git clone https://github.com/mahimDev/gadget-heaven.git
 
    ```
 
